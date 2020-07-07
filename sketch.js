@@ -73,15 +73,10 @@ function writeStock(x) {
 
 function writeStock2(x) {
   
-  if (x <= 0) {
-
-    x = 0
-
-  }
-  else {
-
+ 
+  
     x = x + 1
-  }
+  
   firebase.database().ref('/').update({
 
     Food: x
